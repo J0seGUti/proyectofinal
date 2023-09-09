@@ -1,0 +1,53 @@
+ion-content {
+    --background: #70daec;
+}
+
+ion-title{
+    color: rgb(8, 7, 7);
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'MiFuentePersonalizada';
+}
+
+
+
+ion-card-content{
+    padding-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-input{
+    background-color: rgb(149, 150, 150);
+    border-radius: 5px;
+}
+
+ion-button{
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+}
+
+.or{
+    color: rgb(206, 33, 33);
+    text-align: center;
+}
+
+ion-toolbar{
+    --background: #70daec;
+    color: black;
+}
+
+.dont{
+    text-align: left;
+}
+
+.sign{
+    text-align: left;
+}
+
+.title1{
+    color:rgb(2, 17, 15);
+}

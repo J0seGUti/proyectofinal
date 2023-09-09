@@ -1,0 +1,43 @@
+<ion-content class="ion-padding">
+
+
+  <ion-title >PhotoSena</ion-title>
+  
+  
+  <!--inicio tarejeta del login------------------------------------>
+  
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-input label="Numero identificacion" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="nombre"></ion-input>
+        <br>
+        <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="password" type="password"></ion-input>
+      </form>
+      <br>
+        <ion-button (click)="ingresar()">Ingresar</ion-button>
+  
+        
+    </ion-card-content>
+  
+  <!--fin tarjeta de login---------------------------------------->
+  
+  
+  
+  </ion-content>
+  <!--inicio footet----------------------------------------------->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row >
+          <ion-col size="8" class="dont">
+            <h6>No tienes una cuenta?</h6>
+          </ion-col>
+          <ion-col size="4" class="sign">
+            <ion-buttons>
+              <ion-button [routerLink]="['/registrar']"><h6>Registrarse</h6></ion-button>
+            </ion-buttons>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+  <!--fin footer------------------------------------------------->

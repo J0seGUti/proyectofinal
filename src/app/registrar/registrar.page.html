@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-title class="titulo">PhotoSena</ion-title>
+
+  <p class="su">Sube fotos con tus amigos</p> 
+
+  <ion-grid>
+    <ion-row class="or">
+      <ion-col size="5">------------------------------</ion-col>
+      <ion-col size="2">O</ion-col>
+      <ion-col size="5">------------------------------</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+
+  <ion-card-content>
+    <ion-card-header>
+      <ion-card-title>Registrarse</ion-card-title>
+    </ion-card-header>
+
+
+      <form [formGroup]="formularioRegistro">
+        <ion-input label="Numero identificacion" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="nombre"></ion-input>
+        <br>
+        <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="password" type="password"></ion-input>
+        <br>
+        <ion-input label="Repetir Contraseña" label-placement="floating" fill="outline" placeholder="Enter text" formControlName="confirmacionPassword" type="password"></ion-input>
+      </form>
+      <br>
+      <ion-button (click)="guardar()">
+        Registrarse
+      </ion-button>
+  </ion-card-content>
+
+
+
+ 
